@@ -48,8 +48,8 @@ export default function Experience() {
       institution: "D Y Patil University, Navi Mumbai",
       duration: "June 2026 – April 2028",
       location: "Navi Mumbai, India",
-      gpa: "CGPA: 9.8 / 10.0",
-      description: "Core modules: Data Structures & Algorithms, Object Oriented Programming, DBMS, Operating Systems, Web Technologies.",
+      // gpa: "Running",
+      description: "Core modules: ML Algorithms, Data Science, DBMS, RAG Systems, Agentic AI.",
     },
     {
       degree: "B.Sc. in Computer Science",

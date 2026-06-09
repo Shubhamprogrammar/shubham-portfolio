@@ -95,8 +95,8 @@ export default function Navbar() {
               </button>
               
               <a
-                href="/Shubham_Maurya_Resume.pdf"
-                download="Shubham_Maurya_Resume.pdf"
+                href="/Shubham_CV.pdf"
+                download="Shubham_CV.pdf"
                 className="flex items-center gap-1.5 px-4 py-2 text-[10px] font-bold rounded-full bg-primary hover:bg-primary-hover text-white transition-all duration-200 shadow-md shadow-primary/10 hover:shadow-primary/20"
               >
                 <FileDown className="w-3.5 h-3.5" />
@@ -151,8 +151,8 @@ export default function Navbar() {
                 ))}
                 <div className="pt-3 border-t border-card-border flex flex-col gap-2">
                   <a
-                    href="/Shubham_Maurya_Resume.pdf"
-                    download="Shubham_Maurya_Resume.pdf"
+                    href="/Shubham_CV.pdf"
+                    download="Shubham_CV.pdf"
                     className="flex items-center justify-center gap-1.5 w-full py-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-xs text-center transition shadow-md"
                   >
                     <FileDown className="w-4 h-4" />

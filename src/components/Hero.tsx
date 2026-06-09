@@ -23,6 +23,12 @@ const LinkedinIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
   </svg>
 );
 
+const HackerRankIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+    <path d="M11.924 2.863c.18-.125.402-.125.582 0l7.5 5.208a.554.554 0 01.242.466v9.26c0 .188-.098.363-.262.466l-7.5 5.21a.57.57 0 01-.582 0l-7.5-5.21a.554.554 0 01-.241-.466v-9.26c0-.188.098-.363.262-.466l7.5-5.208zm1.08 1.696l-6.852 4.764v8.45l6.852 4.762 6.852-4.762v-8.45l-6.852-4.764zm-3.59 6.433l3.19 3.183 3.514-3.183-3.514-3.134-3.19 3.134z" />
+  </svg>
+);
+
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
@@ -74,7 +80,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Hero Left Content */}
           <div className="lg:col-span-7 space-y-6">
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -82,7 +88,7 @@ export default function Hero() {
             >
               <span className="w-2 h-2 rounded-full bg-green-500 animate-ping" />
               Open for Internships & Software Roles
-            </motion.div>
+            </motion.div> */}
 
             <div className="space-y-2">
               <motion.h2
@@ -160,8 +166,8 @@ export default function Hero() {
               </a>
 
               <a
-                href="/Shubham_Maurya_Resume.pdf"
-                download="Shubham_Maurya_Resume.pdf"
+                href="/Shubham_CV.pdf"
+                download="Shubham_CV.pdf"
                 className="flex items-center gap-2 px-5 py-3 rounded-xl border border-card-border hover:border-primary/50 text-foreground text-xs font-bold transition-all duration-200 glass hover:translate-y-[-2px] cursor-pointer"
               >
                 <Download className="w-4 h-4" />
@@ -195,6 +201,15 @@ export default function Hero() {
                 <LinkedinIcon className="w-4.5 h-4.5" />
               </a>
               <a
+                href="https://www.hackerrank.com/Shubhamprogrammar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-xl border border-card-border hover:border-primary text-muted hover:text-primary transition-all duration-200 glass cursor-pointer"
+                aria-label="HackerRank"
+              >
+                <HackerRankIcon className="w-4.5 h-4.5" />
+              </a>
+              <a
                 href="mailto:mauryashubham12349@gmail.com"
                 className="p-2.5 rounded-xl border border-card-border hover:border-primary text-muted hover:text-primary transition-all duration-200 glass cursor-pointer"
                 aria-label="Email"
@@ -205,7 +220,7 @@ export default function Hero() {
           </div>
 
           {/* Hero Right Column: Profile mockup card */}
-          <div className="lg:col-span-5 flex justify-center items-center">
+          <div className="hidden lg:flex lg:col-span-5 justify-center items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}

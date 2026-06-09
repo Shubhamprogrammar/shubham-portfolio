@@ -31,20 +31,47 @@ export default function Skills() {
           ),
         },
         {
-          name: "DSA",
+          name: "Java",
           level: "Advanced",
           icon: (
-            <div className="w-6 h-6 font-bold text-[9px] bg-purple-500/10 rounded flex items-center justify-center text-purple-400 select-none">
+            <div className="w-6 h-6 font-bold text-xs bg-orange-500/10 rounded flex items-center justify-center text-orange-400 select-none">
+              JV
+            </div>
+          ),
+        },
+        {
+          name: "TypeScript",
+          level: "Advanced",
+          icon: (
+            <div className="w-6 h-6 font-bold text-xs bg-sky-500/10 rounded flex items-center justify-center text-sky-400 select-none">
+              TS
+            </div>
+          ),
+        },
+        {
+          name: "Data Structures & Algorithms",
+          level: "Advanced",
+          icon: (
+            <div className="w-6 h-6 font-bold text-[7px] bg-purple-500/10 rounded flex items-center justify-center text-purple-400 select-none">
               DSA
             </div>
           ),
         },
         {
-          name: "OOPs & OS",
+          name: "Object-Oriented Design",
           level: "Advanced",
           icon: (
-            <div className="w-6 h-6 font-bold text-[9px] bg-green-500/10 rounded flex items-center justify-center text-green-400 select-none">
-              OOP
+            <div className="w-6 h-6 font-bold text-[8px] bg-green-500/10 rounded flex items-center justify-center text-green-400 select-none">
+              OOD
+            </div>
+          ),
+        },
+        {
+          name: "Operating Systems",
+          level: "Advanced",
+          icon: (
+            <div className="w-6 h-6 font-bold text-[9px] bg-emerald-500/10 rounded flex items-center justify-center text-emerald-400 select-none">
+              OS
             </div>
           ),
         },
@@ -90,6 +117,15 @@ export default function Skills() {
           icon: (
             <div className="w-6 h-6 font-bold text-[8px] bg-green-500/10 rounded flex items-center justify-center text-green-500 select-none">
               N/EX
+            </div>
+          ),
+        },
+        {
+          name: "REST API Design",
+          level: "Advanced",
+          icon: (
+            <div className="w-6 h-6 font-bold text-[8px] bg-cyan-500/10 rounded flex items-center justify-center text-cyan-400 select-none">
+              API
             </div>
           ),
         },
@@ -183,12 +219,12 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-24 relative overflow-hidden bg-background/50 grid-bg">
+    <section id="skills" className="py-18 relative overflow-hidden bg-background/50 grid-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h2
+          {/* <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -196,7 +232,7 @@ export default function Skills() {
             className="text-base font-semibold text-primary tracking-wider uppercase"
           >
             My Toolbox
-          </motion.h2>
+          </motion.h2> */}
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Home, Heart, Activity, ImageIcon } from "lucide-react";
+import { ExternalLink, Home, Heart, Activity, ImageIcon, MessageSquare, Lock, Code2 } from "lucide-react";
 
 interface Project {
   title: string;
@@ -124,6 +124,73 @@ function MLPlayground() {
 
 export default function Projects() {
   const projects: Project[] = [
+        {
+      title: "Env Vault",
+      description:
+        "A secure secrets management dashboard for environment variables and credentials. Designed to centralize access control, protect sensitive configuration, and provide a clean developer experience for team workflows.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Encryption", "Secrets Management", "Dashboard"],
+      githubUrl: "https://github.com/Shubhamprogrammar/env-vault",
+      liveUrl: "https://env-vault.vercel.app/",
+      visual: (
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 flex flex-col justify-between p-6 text-white select-none">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-2">
+              <Lock className="w-5 h-5 text-emerald-400 animate-pulse" />
+              <span className="text-xs font-bold tracking-wider">ENV VAULT</span>
+            </div>
+            <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[9px] border border-emerald-500/20 font-semibold">
+              Secure
+            </span>
+          </div>
+
+          <div className="space-y-3 mt-4">
+            <div className="h-24 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 space-y-3">
+              <div className="w-full h-3 bg-white/20 rounded" />
+              <div className="w-5/6 h-3 bg-white/15 rounded" />
+              <div className="flex gap-2">
+                <div className="flex-1 h-9 rounded-xl bg-emerald-500/10 border border-emerald-400/10" />
+                <div className="flex-1 h-9 rounded-xl bg-white/10" />
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "AI PR Reviewer",
+      description:
+        "An AI-driven pull request assistant that analyzes diffs, highlights code quality issues, and suggests improvements. Built to accelerate code review and make collaborator feedback more precise with contextual suggestions.",
+      tags: ["React.js", "AI", "NLP", "Code Review", "GitHub API", "Automation"],
+      githubUrl: "https://github.com/Shubhamprogrammar/ai-pr-reviewer",
+      liveUrl: "https://ai-pr-reviewer.vercel.app/",
+      visual: (
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-purple-950 flex flex-col justify-between p-6 text-white select-none">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-2">
+              <Code2 className="w-5 h-5 text-violet-400 animate-pulse" />
+              <span className="text-xs font-bold tracking-wider">AI PR REVIEWER</span>
+            </div>
+            <span className="px-2 py-0.5 rounded-full bg-violet-500/20 text-violet-300 text-[9px] border border-violet-500/20 font-semibold">
+              Smart Review
+            </span>
+          </div>
+
+          <div className="space-y-3 mt-4">
+            <div className="h-24 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 space-y-2">
+              <div className="flex justify-between items-center">
+                <div className="w-16 h-3 bg-white/20 rounded" />
+                <span className="text-[8px] text-violet-300 font-bold">AI Insight</span>
+              </div>
+              <div className="w-full h-2 bg-white/15 rounded" />
+              <div className="w-3/4 h-2 bg-white/15 rounded" />
+              <div className="h-7 rounded-xl bg-violet-500/10 flex items-center justify-center text-[9px] font-semibold text-violet-200">
+                Review suggestions
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
     {
       title: "Sarvavyapi - The Real Estate",
       description:
@@ -195,12 +262,50 @@ export default function Projects() {
         </div>
       ),
     },
+    
     {
-      title: "Breast Cancer Detection",
+      title: "UChat Web Application",
       description:
-        "A machine learning classifier built in Python to identify breast tumors as benign or malignant. Leverages pandas, numpy, and scikit-learn for dataset preprocessing, feature engineering, and metrics evaluations (accuracy, recall, precision).",
-      tags: ["Python", "Machine Learning", "ML Algorithms", "Data Preprocessing", "Feature Selection"],
-      githubUrl: "https://github.com/Shubhamprogrammar/breast-cancer-detection",
+        "A polished chat web application built for real-time communication, with a clean modern UI, threaded messaging, and responsive messaging panels that keep conversations fast and intuitive.",
+      tags: ["React.js", "Socket.IO", "Tailwind CSS", "Node.js", "Express.js", "Realtime"],
+      githubUrl: "https://github.com/Shubhamprogrammar/uchat-web",
+      liveUrl: "https://uchat-web.vercel.app/",
+      visual: (
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-sky-950 flex flex-col justify-between p-6 text-white select-none">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-2">
+              <MessageSquare className="w-5 h-5 text-sky-400 animate-pulse" />
+              <span className="text-xs font-bold tracking-wider">UCHAT WEB</span>
+            </div>
+            <span className="px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 text-[9px] border border-sky-500/20 font-semibold">
+              Realtime
+            </span>
+          </div>
+
+          <div className="space-y-3 mt-4">
+            <div className="h-24 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 space-y-2">
+              <div className="flex gap-2">
+                <div className="w-10 h-10 rounded-2xl bg-sky-500/20" />
+                <div className="flex-1 space-y-2">
+                  <div className="w-full h-3 bg-white/20 rounded" />
+                  <div className="w-3/4 h-3 bg-white/15 rounded" />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="h-7 rounded-xl bg-sky-500/10" />
+                <div className="h-7 rounded-xl bg-sky-500/10" />
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Launchflow Business Automation Workflow",
+      description:
+        "A business workflow automation platform built with Next.js, Prisma, Clerk, Redis caching, and service workers. It streamlines task orchestration, secure access, and operational efficiency for teams managing complex workflows.",
+      tags: ["NextJS", "Prisma", "Better-auth", "Redis", "Clerk", "Service Workers", "Workflow"],
+      githubUrl: "https://github.com/Shubhamprogrammar/LaunchFlow-Business-Automation",
       liveUrl: "#",
       visual: <MLPlayground />,
     },
