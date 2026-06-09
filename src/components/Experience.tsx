@@ -252,7 +252,7 @@ export default function Experience() {
               </div>
             </div>
 
-            <GitHubTimeline />
+            
 
           </div>
 

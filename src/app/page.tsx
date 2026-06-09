@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
 import BackToTop from "@/components/BackToTop";
 import LoadingScreen from "@/components/LoadingScreen";
+import GitHubTimeline from "@/components/GitHubTimeline";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <About />
         <Skills />
         <Experience />
+        <GitHubTimeline />
         <Projects />
         <Contact />
       </main>

@@ -34,6 +34,15 @@ export default function GitHubTimeline({ username }: Props) {
 function ContributionsCalendar({ username }: { username?: string }) {
   const envUser = process.env.NEXT_PUBLIC_GITHUB_USERNAME;
   const user = username || envUser;
+  const githubUrl = `https://github.com/users/${user}/contributions`;
+  const fallbackUrl = `https://ghchart.rshah.org/${user}`;
+  const [src, setSrc] = useState(githubUrl);
+  const [triedFallback, setTriedFallback] = useState(false);
+
+  useEffect(() => {
+    setSrc(githubUrl);
+    setTriedFallback(false);
+  }, [githubUrl]);
 
   if (!user) {
     return (
@@ -45,14 +54,18 @@ function ContributionsCalendar({ username }: { username?: string }) {
     );
   }
 
-  const url = `/api/github-contributions?username=${encodeURIComponent(user)}`;
-
   return (
     <div className="overflow-auto rounded-md border border-card-border bg-card/40 p-4">
       <img
-        src={url}
+        src={src}
         alt={`${user} GitHub contributions`}
         className="block max-w-full"
+        onError={() => {
+          if (!triedFallback) {
+            setSrc(fallbackUrl);
+            setTriedFallback(true);
+          }
+        }}
       />
     </div>
   );
