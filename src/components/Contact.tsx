@@ -115,7 +115,7 @@ export default function Contact() {
     {
       name: "LinkedIn Professional",
       value: "linkedin.com/in/shubham-maurya",
-      href: "https://linkedin.com/in/shubham-maurya",
+      href: "https://www.linkedin.com/in/shubham-maurya-9932a3268/",
       icon: <LinkedinIcon className="w-5 h-5 text-accent" />,
       actionText: "Connect with me",
     },

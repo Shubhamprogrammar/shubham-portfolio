@@ -68,7 +68,7 @@ export default function Footer() {
               <GithubIcon className="w-4 h-4" />
             </a>
             <a
-              href="https://linkedin.com/in/shubham-maurya"
+              href="https://www.linkedin.com/in/shubham-maurya-9932a3268/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted hover:text-primary transition-colors cursor-pointer"

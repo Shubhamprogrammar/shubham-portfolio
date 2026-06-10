@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section id="about" className="py-24 relative overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2
@@ -33,10 +33,10 @@ export default function About() {
 
         {/* Layout Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-          
+
           {/* Grid Left: Visual Cards / Highlights */}
           <div className="lg:col-span-5 flex flex-col gap-6 justify-center">
-            
+
             {/* Glowing gold Academic Honors badge */}
             <motion.div
               initial={{ scale: 0.95, opacity: 0 }}
@@ -152,11 +152,14 @@ export default function About() {
                 <p className="text-xs text-muted font-medium mt-1">DSA HackerRank Solved</p>
               </div>
               <div>
-                <p className="text-2xl font-extrabold text-indigo-500">100+</p>
+                <p className="text-2xl font-extrabold text-indigo-500">150+</p>
                 <p className="text-xs text-muted font-medium mt-1">Candidates Mentored</p>
               </div>
+              <div>
+                <p className="text-2xl font-extrabold text-emerald-400">8+</p>
+                <p className="text-xs text-muted font-medium mt-1">Projects Shipped</p>
+              </div>
             </div>
-
           </div>
         </div>
 

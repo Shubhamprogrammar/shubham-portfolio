@@ -130,7 +130,7 @@ export default function Projects() {
         "A secure secrets management dashboard for environment variables and credentials. Designed to centralize access control, protect sensitive configuration, and provide a clean developer experience for team workflows.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Encryption", "Secrets Management", "Dashboard"],
       githubUrl: "https://github.com/Shubhamprogrammar/env-vault",
-      liveUrl: "https://env-vault.vercel.app/",
+      liveUrl: "https://online-env-vault.vercel.app/",
       visual: (
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
@@ -161,8 +161,8 @@ export default function Projects() {
       description:
         "An AI-driven pull request assistant that analyzes diffs, highlights code quality issues, and suggests improvements. Built to accelerate code review and make collaborator feedback more precise with contextual suggestions.",
       tags: ["React.js", "AI", "NLP", "Code Review", "GitHub API", "Automation"],
-      githubUrl: "https://github.com/Shubhamprogrammar/ai-pr-reviewer",
-      liveUrl: "https://ai-pr-reviewer.vercel.app/",
+      githubUrl: "https://github.com/Shubhamprogrammar/pr-reviewer",
+      liveUrl: "https://pr-reviewer-virid.vercel.app/",
       visual: (
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-purple-950 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
@@ -196,7 +196,7 @@ export default function Projects() {
       description:
         "A MERN stack portal designed for property listings, buying, and renting. Integrates JWT session authentication, image hosting via Cloudinary, and EmailJS modules to facilitate direct communication between client inquiries and listing agents.",
       tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Bootstrap CSS", "Cloudinary", "JWT Auth", "EmailJS"],
-      githubUrl: "https://github.com/Shubhamprogrammar/sarvavyapi",
+      githubUrl: "https://github.com/Shubhamprogrammar/sarvavyapi-frontend",
       liveUrl: "https://sarvavyapi.vercel.app/",
       visual: (
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 flex flex-col justify-between p-6 text-white select-none">
@@ -232,7 +232,7 @@ export default function Projects() {
       description:
         "A collaborative MERN stack web platform designed to allow users to express thoughts and ideas freely. Leverages JWT authorization filters and a responsive UI layout to drive candidate engagement and interactive discussions.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Bootstrap CSS", "JWT Auth"],
-      githubUrl: "https://github.com/Shubhamprogrammar/openyourhearts",
+      githubUrl: "https://github.com/Shubhamprogrammar/open-your-heart-frontend",
       liveUrl: "https://openyourhearts.vercel.app/",
       visual: (
         <div className="absolute inset-0 bg-gradient-to-br from-rose-950 via-slate-900 to-rose-900 flex flex-col justify-between p-6 text-white select-none">
@@ -268,8 +268,8 @@ export default function Projects() {
       description:
         "A polished chat web application built for real-time communication, with a clean modern UI, threaded messaging, and responsive messaging panels that keep conversations fast and intuitive.",
       tags: ["React.js", "Socket.IO", "Tailwind CSS", "Node.js", "Express.js", "Realtime"],
-      githubUrl: "https://github.com/Shubhamprogrammar/uchat-web",
-      liveUrl: "https://uchat-web.vercel.app/",
+      githubUrl: "https://github.com/Shubhamprogrammar/uchat-webapp",
+      liveUrl: "https://uchat-webapp.vercel.app/",
       visual: (
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-sky-950 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
@@ -305,9 +305,58 @@ export default function Projects() {
       description:
         "A business workflow automation platform built with Next.js, Prisma, Clerk, Redis caching, and service workers. It streamlines task orchestration, secure access, and operational efficiency for teams managing complex workflows.",
       tags: ["NextJS", "Prisma", "Better-auth", "Redis", "Clerk", "Service Workers", "Workflow"],
-      githubUrl: "https://github.com/Shubhamprogrammar/LaunchFlow-Business-Automation",
+      githubUrl: "https://github.com/Shubhamprogrammar/Launchflow-automate",
       liveUrl: "#",
-      visual: <MLPlayground />,
+      visual: (
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 flex flex-col justify-between p-6 text-white select-none">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-2">
+              <Activity className="w-5 h-5 text-emerald-300 animate-pulse" />
+              <span className="text-xs font-bold tracking-wider">LAUNCHFLOW</span>
+            </div>
+            <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-200 text-[9px] border border-emerald-500/20 font-semibold">
+              Workflow
+            </span>
+          </div>
+
+          <div className="space-y-3 mt-4">
+            <div className="h-24 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm p-4">
+              <div className="flex items-center justify-between gap-3 mb-3">
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.24em] text-emerald-200/80">Active pipeline</p>
+                  <p className="mt-1 text-sm font-semibold text-white">Candidate onboarding</p>
+                </div>
+                <span className="text-[10px] text-emerald-300 font-semibold">83%</span>
+              </div>
+              <div className="h-2 rounded-full bg-white/10 overflow-hidden">
+                <div className="h-full w-5/6 rounded-full bg-emerald-400" />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-3">
+                <div className="h-2.5 w-2/3 rounded-full bg-emerald-400 mb-3" />
+                <div className="space-y-2">
+                  <div className="h-2 rounded-full bg-white/10" />
+                  <div className="h-2 rounded-full bg-white/10 w-5/6" />
+                </div>
+              </div>
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-3">
+                <div className="h-2.5 w-3/4 rounded-full bg-emerald-300 mb-3" />
+                <div className="space-y-2">
+                  <div className="h-2 rounded-full bg-white/10" />
+                  <div className="h-2 rounded-full bg-white/10 w-4/6" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.24em] text-emerald-200 text-opacity-80">
+            <span>Secure access</span>
+            <span>Automated tasks</span>
+          </div>
+        </div>
+      ),
     },
   ];
 

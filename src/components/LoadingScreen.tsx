@@ -59,7 +59,7 @@ export default function LoadingScreen() {
               transition={{ delay: 0.8, duration: 0.5 }}
               className="text-xs tracking-wider text-muted mt-2"
             >
-              Full Stack Developer Portfolio
+              Full Stack Developer
             </motion.p>
 
             {/* Modern bar progress indicator */}

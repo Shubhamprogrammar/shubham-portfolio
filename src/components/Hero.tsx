@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const roles = [
   "Software Developer",
@@ -126,9 +127,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-sm md:text-base text-muted max-w-2xl leading-relaxed mx-auto md:mx-0 text-justify md:text-left"
             >
-              A software developer and educator with a passion for writing clean, efficient code and training candidates.
-              Specialize in JavaScript/TypeScript stacks (Next.js, React, Node.js), Python development, Object Oriented Programming,
-              and Machine Learning classifiers.
+              A software developer with a passion for writing clean, efficient code. Specialize in JavaScript/TypeScript stacks (Next.js, React, Node.js), Python development, DSA, Object Oriented Programming, and Machine Learning Algorithms.
             </motion.p>
 
             <motion.div
@@ -183,7 +182,7 @@ export default function Hero() {
               className="flex items-center justify-center md:justify-start gap-4 pt-2"
             >
               <a
-                href="https://github.com/Shubhamprogrammar"
+                href="https://github.com/Shubhamprogrammar/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl border border-card-border hover:border-primary text-muted hover:text-primary transition-all duration-200 glass cursor-pointer"
@@ -192,7 +191,7 @@ export default function Hero() {
                 <GithubIcon className="w-4.5 h-4.5" />
               </a>
               <a
-                href="https://linkedin.com/in/shubham-maurya"
+                href="https://www.linkedin.com/in/shubham-maurya-9932a3268/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl border border-card-border hover:border-primary text-muted hover:text-primary transition-all duration-200 glass cursor-pointer"
@@ -201,7 +200,7 @@ export default function Hero() {
                 <LinkedinIcon className="w-4.5 h-4.5" />
               </a>
               <a
-                href="https://www.hackerrank.com/Shubhamprogrammar"
+                href="https://www.hackerrank.com/profile/mauryashubham121"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl border border-card-border hover:border-primary text-muted hover:text-primary transition-all duration-200 glass cursor-pointer"
@@ -235,18 +234,15 @@ export default function Hero() {
               <div className="absolute inset-10 rounded-full bg-gradient-to-tr from-primary to-accent opacity-20 blur-2xl animate-pulse-slow" />
 
               {/* Centered avatar placeholder card (premium glassmorphic profile shape) */}
-              <div className="absolute inset-10 rounded-3xl border border-card-border bg-gradient-to-br from-card-bg to-background/30 glass flex flex-col items-center justify-center p-6 shadow-2xl animate-float">
-                <span className="text-6xl font-extrabold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent">
-                  SM
-                </span>
-                <h3 className="text-lg font-bold text-foreground mt-4">Shubham Maurya</h3>
-                <p className="text-xs text-muted text-center mt-1">Software & Web Developer</p>
-                <div className="flex flex-wrap justify-center gap-1.5 mt-3 px-2">
-                  <span className="px-2 py-0.5 rounded-full bg-primary/10 border border-primary/20 text-[9px] text-primary font-medium">React</span>
-                  <span className="px-2 py-0.5 rounded-full bg-accent/10 border border-accent/20 text-[9px] text-accent font-medium">Next.js</span>
-                  <span className="px-2 py-0.5 rounded-full bg-[#10b981]/10 border border-[#10b981]/20 text-[9px] text-primary font-medium">Python</span>
-                  <span className="px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-[9px] text-accent font-medium">Java</span>
-                </div>
+              <div className="absolute inset-10 rounded-3xl overflow-hidden border border-card-border bg-white/40 shadow-xl shadow-white/10 dark:bg-gradient-to-br dark:from-card-bg dark:to-background/30 glass animate-float">
+                <Image
+                  src="/shubham.jpeg"
+                  alt="Shubham Maurya"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 540px"
+                  loading="eager"
+                  className="object-cover brightness-110 contrast-110 dark:brightness-100 dark:contrast-100"
+                />
               </div>
             </motion.div>
           </div>
