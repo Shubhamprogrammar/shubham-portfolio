@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shubham Maurya | Software & Web Developer Portfolio",
-  description: "Professional portfolio of Shubham Maurya, a Software and Web Developer based in Ghansoli, Navi Mumbai. Specialize in MERN stack, Next.js, Java, Python, and Machine Learning.",
+  title: "Shubham Maurya | Software Developer",
+  description: "Shubham Maurya is a Full Stack Developer specializing in Next.js, React, Node.js, AWS and AI.",
   keywords: [
     "Shubham Maurya",
     "Software Developer",
@@ -24,27 +24,25 @@ export const metadata: Metadata = {
     "React Developer",
     "Next.js Developer",
     "Python Developer",
-    "Java Developer",
     "Navi Mumbai",
     "Ghansoli",
     "SIES Nerul",
     "Computer Science Graduate",
-    "Machine Learning Developer",
     "Portfolio Website",
   ],
   authors: [{ name: "Shubham Maurya" }],
   creator: "Shubham Maurya",
   openGraph: {
-    title: "Shubham Maurya | Software & Web Developer Portfolio",
-    description: "Explore the computer science projects, MERN web applications, and professional credentials of Shubham Maurya.",
+    title: "Shubham Maurya | Software Developer",
+    description: "Shubham Maurya is a Full Stack Developer specializing in Next.js, React, Node.js, AWS and AI.",
     type: "website",
     locale: "en_IN",
-    siteName: "Shubham Maurya Portfolio",
+    siteName: "Shubham Maurya",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shubham Maurya | Software & Web Developer Portfolio",
-    description: "Explore the computer science projects, MERN web applications, and professional credentials of Shubham Maurya.",
+    title: "Shubham Maurya | Software Developer",
+    description: "Shubham Maurya is a Full Stack Developer specializing in Next.js, React, Node.js, AWS and AI.",
   },
 };
 
