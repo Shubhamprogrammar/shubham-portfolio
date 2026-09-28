@@ -1,7 +1,7 @@
 # Shubham Maurya — Developer Portfolio
 
 <p align="center">
-  <a href="https://shubham-portfolio-seven-sable.vercel.app">
+  <a href="https://shubham-techie.vercel.app">
     <img src="https://img.shields.io/badge/Live%20Portfolio-Visit%20Website-black?style=for-the-badge" alt="Live Portfolio" />
   </a>
   <a href="https://github.com/Shubhamprogrammar">
@@ -17,7 +17,7 @@
 
 ## 🌐 Live Portfolio
 
-**[Visit My Portfolio](https://shubham-portfolio-seven-sable.vercel.app)**
+**[Visit My Portfolio](https://shubham-techie.vercel.app)**
 
 The portfolio showcases my:
 
