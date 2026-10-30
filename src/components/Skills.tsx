@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Database, LayoutGrid, Terminal } from "lucide-react";
+import { Brain, Code2, Database, LayoutGrid, Terminal } from "lucide-react";
 
 interface SkillItem {
   name: string;
@@ -13,6 +13,7 @@ interface SkillCategory {
   title: string;
   icon: React.ReactNode;
   skills: SkillItem[];
+  fullWidth?: boolean;
 }
 
 export default function Skills() {
@@ -216,6 +217,67 @@ export default function Skills() {
         },
       ],
     },
+    {
+      title: "AI & LLMs",
+      fullWidth: true,
+      icon: <Brain className="w-5 h-5 text-violet-500" />,
+      skills: [
+        {
+          name: "Generative AI",
+          level: "Intermediate",
+          icon: (
+            <div className="w-6 h-6 font-bold text-[8px] bg-violet-500/10 rounded flex items-center justify-center text-violet-400 select-none">
+              GEN
+            </div>
+          ),
+        },
+        {
+          name: "LLM Applications",
+          level: "Intermediate",
+          icon: (
+            <div className="w-6 h-6 font-bold text-[8px] bg-fuchsia-500/10 rounded flex items-center justify-center text-fuchsia-400 select-none">
+              LLM
+            </div>
+          ),
+        },
+        {
+          name: "RAG Pipelines",
+          level: "Intermediate",
+          icon: (
+            <div className="w-6 h-6 font-bold text-[8px] bg-rose-500/10 rounded flex items-center justify-center text-rose-400 select-none">
+              RAG
+            </div>
+          ),
+        },
+        {
+          name: "AI Agents",
+          level: "Intermediate",
+          icon: (
+            <div className="w-6 h-6 font-bold text-[8px] bg-amber-500/10 rounded flex items-center justify-center text-amber-400 select-none">
+              AGT
+            </div>
+          ),
+        },
+        {
+          name: "MCP",
+          level: "Intermediate",
+          icon: (
+            <div className="w-6 h-6 font-bold text-[8px] bg-teal-500/10 rounded flex items-center justify-center text-teal-400 select-none">
+              MCP
+            </div>
+          ),
+        },
+        {
+          name: "Prompt Engineering",
+          level: "Intermediate",
+          icon: (
+            <div className="w-6 h-6 font-bold text-[8px] bg-sky-500/10 rounded flex items-center justify-center text-sky-400 select-none">
+              PE
+            </div>
+          ),
+        },
+      ],
+    },
   ];
 
   return (
@@ -249,7 +311,7 @@ export default function Skills() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base text-muted mt-4 max-w-2xl mx-auto"
           >
-            An organized view of programming languages, CS core domains, databases, and hosting stacks I use to engineer modern solutions.
+            An organized view of programming languages, CS core domains, AI & LLM tooling, databases, and hosting stacks I use to engineer modern solutions.
           </motion.p>
         </div>
 
@@ -262,7 +324,7 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: catIdx * 0.1 }}
-              className="p-6 rounded-3xl border border-card-border bg-card-bg glass shadow-md flex flex-col gap-6"
+              className={`p-6 rounded-3xl border border-card-border bg-card-bg glass shadow-md flex flex-col gap-6 ${category.fullWidth ? "md:col-span-2" : ""}`}
             >
               <div className="flex items-center gap-3 border-b border-card-border pb-4">
                 <div className="p-2.5 rounded-xl bg-card-bg border border-card-border shadow-sm">
@@ -272,7 +334,7 @@ export default function Skills() {
               </div>
 
               {/* Skills cards grid inside category */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <div className={`grid grid-cols-2 sm:grid-cols-3 gap-4 ${category.fullWidth ? "lg:grid-cols-6" : ""}`}>
                 {category.skills.map((skill, skillIdx) => (
                   <motion.div
                     key={skill.name}
