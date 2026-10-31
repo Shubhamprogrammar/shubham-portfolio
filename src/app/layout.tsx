@@ -14,6 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shubham.sas3d.in"),
+  alternates: {
+    canonical: "/",
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
   title: "Shubham Maurya | Software Developer",
   description: "Shubham Maurya is a Full Stack Developer specializing in Next.js, React, Node.js, AWS and AI.",
   keywords: [
@@ -35,6 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Shubham Maurya | Software Developer",
     description: "Shubham Maurya is a Full Stack Developer specializing in Next.js, React, Node.js, AWS and AI.",
+    url: "/",
     type: "website",
     locale: "en_IN",
     siteName: "Shubham Maurya",
