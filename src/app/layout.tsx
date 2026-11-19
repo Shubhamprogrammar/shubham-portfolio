@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shubham.sas3d.in"),
+  metadataBase: new URL("https://shubham-maurya.sas3d.in"),
   alternates: {
     canonical: "/",
   },
