@@ -1,7 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, Code2, Database, LayoutGrid, Terminal } from "lucide-react";
+import {
+  Binary,
+  Bot,
+  Boxes,
+  Brain,
+  Code2,
+  Cpu,
+  Database,
+  FileSearch,
+  Gauge,
+  LayoutGrid,
+  MessageSquareText,
+  Plug,
+  Sparkles,
+  Terminal,
+  WandSparkles,
+  Webhook,
+} from "lucide-react";
+import { FaJava } from "react-icons/fa6";
+import { SiMysql, SiNodedotjs, SiPrisma, SiPython, SiTypescript, SiVercel } from "react-icons/si";
 
 interface SkillItem {
   name: string;
@@ -25,56 +44,32 @@ export default function Skills() {
         {
           name: "Python",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-xs bg-blue-500/10 rounded flex items-center justify-center text-blue-400 select-none">
-              PY
-            </div>
-          ),
+          icon: <SiPython className="w-6 h-6 text-[#3776AB]" />,
         },
         {
           name: "Java",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-xs bg-orange-500/10 rounded flex items-center justify-center text-orange-400 select-none">
-              JV
-            </div>
-          ),
+          icon: <FaJava className="w-6 h-6 text-[#E76F00]" />,
         },
         {
           name: "TypeScript",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-xs bg-sky-500/10 rounded flex items-center justify-center text-sky-400 select-none">
-              TS
-            </div>
-          ),
+          icon: <SiTypescript className="w-6 h-6 text-[#3178C6]" />,
         },
         {
           name: "Data Structures & Algorithms",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[7px] bg-purple-500/10 rounded flex items-center justify-center text-purple-400 select-none">
-              DSA
-            </div>
-          ),
+          icon: <Binary className="w-6 h-6 text-purple-500" />,
         },
         {
           name: "Object-Oriented Design",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-green-500/10 rounded flex items-center justify-center text-green-400 select-none">
-              OOD
-            </div>
-          ),
+          icon: <Boxes className="w-6 h-6 text-green-500" />,
         },
         {
           name: "Operating Systems",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[9px] bg-emerald-500/10 rounded flex items-center justify-center text-emerald-400 select-none">
-              OS
-            </div>
-          ),
+          icon: <Cpu className="w-6 h-6 text-emerald-500" />,
         },
       ],
     },
@@ -115,29 +110,17 @@ export default function Skills() {
         {
           name: "Node & Express",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-green-500/10 rounded flex items-center justify-center text-green-500 select-none">
-              N/EX
-            </div>
-          ),
+          icon: <SiNodedotjs className="w-6 h-6 text-[#5FA04E]" />,
         },
         {
           name: "REST API Design",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-cyan-500/10 rounded flex items-center justify-center text-cyan-400 select-none">
-              API
-            </div>
-          ),
+          icon: <Webhook className="w-6 h-6 text-cyan-500" />,
         },
         {
           name: "Prisma & SQL",
           level: "Intermediate",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-indigo-500/10 rounded flex items-center justify-center text-indigo-400 select-none">
-              PRM
-            </div>
-          ),
+          icon: <SiPrisma className="w-6 h-6 text-foreground" />,
         },
         {
           name: "Tailwind CSS",
@@ -166,20 +149,12 @@ export default function Skills() {
         {
           name: "MySQL",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-xs bg-[#00758F]/10 rounded flex items-center justify-center text-[#00758F] select-none">
-              SQL
-            </div>
-          ),
+          icon: <SiMysql className="w-7 h-7 text-[#00758F]" />,
         },
         {
           name: "Query Optimization",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-yellow-500/10 rounded flex items-center justify-center text-yellow-500 select-none">
-              OPT
-            </div>
-          ),
+          icon: <Gauge className="w-6 h-6 text-yellow-500" />,
         },
       ],
     },
@@ -209,11 +184,7 @@ export default function Skills() {
         {
           name: "Vercel & Render",
           level: "Advanced",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[9px] bg-white rounded flex items-center justify-center text-black border border-gray-400 select-none">
-              ▲/R
-            </div>
-          ),
+          icon: <SiVercel className="w-5 h-5 text-foreground" />,
         },
       ],
     },
@@ -225,68 +196,44 @@ export default function Skills() {
         {
           name: "Generative AI",
           level: "Intermediate",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-violet-500/10 rounded flex items-center justify-center text-violet-400 select-none">
-              GEN
-            </div>
-          ),
+          icon: <Sparkles className="w-6 h-6 text-violet-500" />,
         },
         {
           name: "LLM Applications",
           level: "Intermediate",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-fuchsia-500/10 rounded flex items-center justify-center text-fuchsia-400 select-none">
-              LLM
-            </div>
-          ),
+          icon: <MessageSquareText className="w-6 h-6 text-fuchsia-500" />,
         },
         {
           name: "RAG Pipelines",
           level: "Intermediate",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-rose-500/10 rounded flex items-center justify-center text-rose-400 select-none">
-              RAG
-            </div>
-          ),
+          icon: <FileSearch className="w-6 h-6 text-rose-500" />,
         },
         {
           name: "AI Agents",
           level: "Intermediate",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-amber-500/10 rounded flex items-center justify-center text-amber-400 select-none">
-              AGT
-            </div>
-          ),
+          icon: <Bot className="w-6 h-6 text-amber-500" />,
         },
         {
           name: "MCP",
           level: "Intermediate",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-teal-500/10 rounded flex items-center justify-center text-teal-400 select-none">
-              MCP
-            </div>
-          ),
+          icon: <Plug className="w-6 h-6 text-teal-500" />,
         },
         {
           name: "Prompt Engineering",
           level: "Intermediate",
-          icon: (
-            <div className="w-6 h-6 font-bold text-[8px] bg-sky-500/10 rounded flex items-center justify-center text-sky-400 select-none">
-              PE
-            </div>
-          ),
+          icon: <WandSparkles className="w-6 h-6 text-sky-500" />,
         },
       ],
     },
   ];
 
   return (
-    <section id="skills" className="py-18 relative overflow-hidden bg-background/50 grid-bg">
+    <section id="skills" className="py-24 relative overflow-hidden bg-background/50 grid-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          {/* <motion.h2
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -294,7 +241,7 @@ export default function Skills() {
             className="text-base font-semibold text-primary tracking-wider uppercase"
           >
             My Toolbox
-          </motion.h2> */}
+          </motion.h2>
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -316,7 +263,7 @@ export default function Skills() {
         </div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {categories.map((category, catIdx) => (
             <motion.div
               key={category.title}
@@ -334,7 +281,7 @@ export default function Skills() {
               </div>
 
               {/* Skills cards grid inside category */}
-              <div className={`grid grid-cols-2 sm:grid-cols-3 gap-4 ${category.fullWidth ? "lg:grid-cols-6" : ""}`}>
+              <div className={`grid grid-cols-2 sm:grid-cols-3 gap-4 [&>*:last-child:nth-child(odd)]:col-span-2 sm:[&>*:last-child:nth-child(odd)]:col-span-1 ${category.fullWidth ? "lg:grid-cols-6" : ""}`}>
                 {category.skills.map((skill, skillIdx) => (
                   <motion.div
                     key={skill.name}

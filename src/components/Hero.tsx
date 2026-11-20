@@ -71,13 +71,13 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-28 overflow-hidden grid-bg"
+      className="relative md:min-h-[80vh] flex items-center justify-center pt-28 pb-8 overflow-hidden grid-bg"
     >
       {/* Background gradients */}
       <div className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-primary/10 blur-3xl animate-pulse-slow -z-10" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-accent/10 blur-3xl animate-pulse-slow -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center md:text-left z-10 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center md:text-left z-10 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Hero Left Content */}
           <div className="lg:col-span-7 space-y-6">
@@ -125,7 +125,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-sm md:text-base text-muted max-w-2xl leading-relaxed mx-auto md:mx-0 text-justify md:text-left"
+              className="text-sm md:text-base text-muted max-w-2xl leading-relaxed mx-auto md:mx-0 text-center md:text-left"
             >
               A software developer with a passion for writing clean, efficient code. Specialize in JavaScript/TypeScript stacks (Next.js, React, Node.js), Python development, DSA, Object Oriented Programming, and Machine Learning Algorithms.
             </motion.p>

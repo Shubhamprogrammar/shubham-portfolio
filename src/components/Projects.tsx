@@ -162,7 +162,7 @@ export default function Projects() {
         "An AI-driven pull request assistant that analyzes diffs, highlights code quality issues, and suggests improvements. Built to accelerate code review and make collaborator feedback more precise with contextual suggestions.",
       tags: ["React.js", "AI", "NLP", "Code Review", "GitHub API", "Automation"],
       githubUrl: "https://github.com/Shubhamprogrammar/pr-reviewer",
-      liveUrl: "https://pr-reviewer-virid.sas3d.in/",
+      liveUrl: "https://pr-reviewer-virid.vercel.app/",
       visual: (
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-purple-950 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
@@ -431,7 +431,7 @@ export default function Projects() {
                   <h4 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
                     {project.title}
                   </h4>
-                  <p className="text-xs text-muted leading-relaxed text-justify">
+                  <p className="text-sm text-muted leading-relaxed">
                     {project.description}
                   </p>
                 </div>
@@ -442,7 +442,7 @@ export default function Projects() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2.5 py-1 rounded-lg bg-card-border text-[9px] font-semibold text-foreground/80 hover:border-primary/25 border border-transparent transition"
+                        className="px-2.5 py-1 rounded-lg bg-card-border text-[11px] font-semibold text-foreground/80 hover:border-primary/25 border border-transparent transition"
                       >
                         {tag}
                       </span>

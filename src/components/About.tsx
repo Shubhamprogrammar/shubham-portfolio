@@ -51,7 +51,7 @@ export default function About() {
               </div>
               <div className="relative min-w-0">
                 <h4 className="text-xs font-extrabold text-amber-500 dark:text-amber-400 tracking-wider uppercase">Consistently Ranked 1st</h4>
-                <p className="text-[11px] text-muted mt-1 leading-relaxed">
+                <p className="text-[14px] text-muted mt-1 leading-relaxed">
                   Ranked 1st consistently in computer science across all semesters at SIES (Nerul) College.
                 </p>
               </div>
@@ -102,17 +102,18 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="space-y-4 text-justify"
+              className="space-y-4"
             >
-              <h3 className="text-2xl font-bold text-foreground">My Developer Philosophy</h3>
+              <h3 className="text-2xl font-bold text-foreground">Professional Summary</h3>
               <p className="text-base text-muted leading-relaxed">
-                I believe that solid software development is built on two pillars: deep algorithmic computer science fundamentals
-                and the ability to share that knowledge clearly. Whether optimizing database queries or training 100+ student developers,
-                efficiency and communication are key.
+                A motivated and versatile professional with a strong interest in technology, business growth, and
+                problem-solving. Experienced in project execution, team collaboration, requirement analysis, strategic planning,
+                and delivering practical solutions.
               </p>
               <p className="text-base text-muted leading-relaxed">
-                My professional experience blends modern UI frameworks like Next.js and Prisma (Rivant Media) with full-stack MERN listing portals
-                and Python machine learning systems. I look forward to engineering highly optimized systems that bring tangible business value.
+                As a Full Stack Developer at Mentorchamp Edtech, I turn business requirements into secure, production-ready
+                applications using Node.js, Next.js, and AWS, while pursuing an MCA in AI &amp; ML. Adaptable, quick to learn, and passionate about innovation,
+                continuous improvement, and turning ideas into impactful results.
               </p>
             </motion.div>
 
@@ -121,11 +122,12 @@ export default function About() {
               <h4 className="text-sm font-semibold text-foreground tracking-wider uppercase">Key Strengths</h4>
               <div className="flex flex-wrap gap-2.5">
                 {[
-                  "🧩 OOPs & Core DSA",
-                  "⚙️ Full-stack Web Systems",
-                  "🧠 ML Classification Models",
-                  "📖 Data Structure and Algorithms",
+                  "🏛️ Scalable System Design",
+                  "☁️ AWS Cloud Deployment",
+                  "🚀 Performance Optimization",
+                  "🤖 AI Agents & RAG Apps",
                   "⚡ SQL Query Optimization",
+                  "🧩 DSA & Problem Solving",
                 ].map((strength, index) => (
                   <motion.span
                     key={strength}

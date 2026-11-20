@@ -152,7 +152,7 @@ export default function Experience() {
 
                   <ul className="list-disc list-outside text-sm text-muted pl-4 space-y-2 leading-relaxed">
                     {exp.details.map((bullet, bulletIdx) => (
-                      <li key={bulletIdx} className="text-justify">{bullet}</li>
+                      <li key={bulletIdx}>{bullet}</li>
                     ))}
                   </ul>
                 </motion.div>
@@ -205,7 +205,7 @@ export default function Experience() {
                       </span>
                     </div>
 
-                    <p className="text-sm text-muted leading-relaxed mt-2 text-justify">
+                    <p className="text-sm text-muted leading-relaxed mt-2">
                       {edu.description}
                     </p>
                   </motion.div>
@@ -244,7 +244,7 @@ export default function Experience() {
                     </div>
 
                     <p className="text-sm font-semibold text-muted">{cert.provider}</p>
-                    <p className="text-sm text-muted leading-relaxed text-justify">
+                    <p className="text-sm text-muted leading-relaxed">
                       {cert.description}
                     </p>
                   </motion.div>

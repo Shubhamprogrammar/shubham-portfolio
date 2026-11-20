@@ -114,14 +114,14 @@ export default function Contact() {
     },
     {
       name: "LinkedIn Professional",
-      value: "linkedin.com/in/shubham-maurya",
+      value: "@shubham-maurya",
       href: "https://www.linkedin.com/in/shubham-maurya-9932a3268/",
       icon: <LinkedinIcon className="w-5 h-5 text-accent" />,
       actionText: "Connect with me",
     },
     {
       name: "GitHub Developer",
-      value: "github.com/Shubhamprogrammar",
+      value: "@Shubhamprogrammar",
       href: "https://github.com/Shubhamprogrammar",
       icon: <GithubIcon className="w-5 h-5 text-indigo-500" />,
       actionText: "Check repository",

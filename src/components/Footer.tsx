@@ -87,7 +87,6 @@ export default function Footer() {
           
           <p className="text-[10px] text-muted text-center md:text-right leading-relaxed">
             &copy; {currentYear} Shubham Maurya. All rights reserved. <br className="sm:hidden" />
-            Built with Next.js 15, Tailwind, & Framer Motion.
           </p>
         </div>
 
