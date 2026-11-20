@@ -87,7 +87,7 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-card-border glass text-xs font-semibold text-primary"
             >
-              <span className="w-2 h-2 rounded-full bg-green-500 animate-ping" />
+              <span className="w-2 h-2 rounded-full bg-primary animate-ping" />
               Open for Internships & Software Roles
             </motion.div> */}
 
@@ -106,7 +106,7 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight"
               >
-                <span className="bg-gradient-to-r from-primary via-emerald-400 to-accent bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary via-blue-400 to-accent bg-clip-text text-transparent">
                   Shubham Maurya
                 </span>
               </motion.h1>

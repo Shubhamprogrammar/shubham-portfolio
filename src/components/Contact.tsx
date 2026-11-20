@@ -86,7 +86,7 @@ export default function Contact() {
         particleCount: 120,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ["#6366f1", "#14b8a6", "#4f46e5"],
+        colors: ["#1d4ed8", "#3b82f6", "#93c5fd"],
       });
 
       setForm({ name: "", email: "", subject: "", message: "" });
@@ -102,7 +102,7 @@ export default function Contact() {
       name: "Direct Call / WhatsApp",
       value: "+91 8850093749",
       href: "https://wa.me/918850093749",
-      icon: <Phone className="w-5 h-5 text-green-500" />,
+      icon: <Phone className="w-5 h-5 text-primary" />,
       actionText: "Chat on WhatsApp",
     },
     {
@@ -123,14 +123,14 @@ export default function Contact() {
       name: "GitHub Developer",
       value: "@Shubhamprogrammar",
       href: "https://github.com/Shubhamprogrammar",
-      icon: <GithubIcon className="w-5 h-5 text-indigo-500" />,
+      icon: <GithubIcon className="w-5 h-5 text-primary" />,
       actionText: "Check repository",
     },
     {
       name: "Current Location",
       value: "Ghansoli, Navi Mumbai, India - 400701",
       href: "https://maps.google.com/?q=Ghansoli",
-      icon: <MapPin className="w-5 h-5 text-pink-500" />,
+      icon: <MapPin className="w-5 h-5 text-primary" />,
       actionText: "Find on map",
     },
   ];

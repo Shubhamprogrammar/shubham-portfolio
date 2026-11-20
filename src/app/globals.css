@@ -1,35 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafdfc;
-  --foreground: #0b1a16; /* deep teal-slate */
-  --card-bg: rgba(255, 255, 255, 0.65);
-  --card-border: rgba(204, 224, 218, 0.7);
-  --primary: #059669; /* emerald-600 */
-  --primary-glow: rgba(5, 150, 105, 0.15);
-  --primary-hover: #047857;
-  --accent: #d97706; /* amber-600 */
-  --accent-glow: rgba(217, 119, 6, 0.15);
-  --muted: #4b6b60; /* soft green-slate */
-  --nav-bg: rgba(250, 253, 252, 0.75);
-  --selection-bg: rgba(5, 150, 105, 0.2);
-  --grid-color: rgba(5, 150, 105, 0.03);
+  --background: #f8fafc; /* slate-50 */
+  --foreground: #0f172a; /* slate-900 */
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(203, 213, 225, 0.7); /* slate-300 */
+  --primary: #2563eb; /* blue-600 */
+  --primary-glow: rgba(37, 99, 235, 0.15);
+  --primary-hover: #1d4ed8; /* blue-700 */
+  --accent: #3b82f6; /* blue-500 */
+  --accent-glow: rgba(59, 130, 246, 0.15);
+  --muted: #64748b; /* slate-500 */
+  --nav-bg: rgba(248, 250, 252, 0.75);
+  --selection-bg: rgba(37, 99, 235, 0.2);
+  --grid-color: rgba(37, 99, 235, 0.04);
 }
 
 .dark {
-  --background: #010c0a; /* very dark forest-teal */
-  --foreground: #ecfdf5; /* emerald-50 */
-  --card-bg: rgba(6, 20, 17, 0.55); /* dark green-slate */
-  --card-border: rgba(16, 44, 38, 0.6);
-  --primary: #10b981; /* emerald-500 */
-  --primary-glow: rgba(16, 185, 129, 0.25);
-  --primary-hover: #059669;
-  --accent: #f59e0b; /* amber-500 */
-  --accent-glow: rgba(245, 158, 11, 0.25);
-  --muted: #8ba29a; /* soft forest-gray */
-  --nav-bg: rgba(1, 12, 10, 0.75);
-  --selection-bg: rgba(16, 185, 129, 0.3);
-  --grid-color: rgba(16, 185, 129, 0.02);
+  --background: #08101f; /* deep navy */
+  --foreground: #e2e8f0; /* slate-200 */
+  --card-bg: rgba(15, 23, 42, 0.55); /* slate-900 */
+  --card-border: rgba(51, 65, 85, 0.55); /* slate-700 */
+  --primary: #60a5fa; /* blue-400 */
+  --primary-glow: rgba(96, 165, 250, 0.25);
+  --primary-hover: #3b82f6; /* blue-500 */
+  --accent: #93c5fd; /* blue-300 */
+  --accent-glow: rgba(147, 197, 253, 0.25);
+  --muted: #8a9ab3;
+  --nav-bg: rgba(8, 16, 31, 0.75);
+  --selection-bg: rgba(96, 165, 250, 0.3);
+  --grid-color: rgba(96, 165, 250, 0.03);
 }
 
 @theme {

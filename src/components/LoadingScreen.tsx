@@ -18,7 +18,7 @@ export default function LoadingScreen() {
       {loading && (
         <motion.div
           exit={{ opacity: 0, transition: { duration: 0.5 } }}
-          className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-[#030712] text-white"
+          className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-[#08101f] text-white"
         >
           <div className="relative flex flex-col items-center">
             {/* Pulsing glow behind */}

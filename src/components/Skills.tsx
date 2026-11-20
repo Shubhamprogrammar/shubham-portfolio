@@ -44,32 +44,32 @@ export default function Skills() {
         {
           name: "Python",
           level: "Advanced",
-          icon: <SiPython className="w-6 h-6 text-[#3776AB]" />,
+          icon: <SiPython className="w-6 h-6 text-primary" />,
         },
         {
           name: "Java",
           level: "Advanced",
-          icon: <FaJava className="w-6 h-6 text-[#E76F00]" />,
+          icon: <FaJava className="w-6 h-6 text-primary" />,
         },
         {
           name: "TypeScript",
           level: "Advanced",
-          icon: <SiTypescript className="w-6 h-6 text-[#3178C6]" />,
+          icon: <SiTypescript className="w-6 h-6 text-primary" />,
         },
         {
           name: "Data Structures & Algorithms",
           level: "Advanced",
-          icon: <Binary className="w-6 h-6 text-purple-500" />,
+          icon: <Binary className="w-6 h-6 text-primary" />,
         },
         {
           name: "Object-Oriented Design",
           level: "Advanced",
-          icon: <Boxes className="w-6 h-6 text-green-500" />,
+          icon: <Boxes className="w-6 h-6 text-primary" />,
         },
         {
           name: "Operating Systems",
           level: "Advanced",
-          icon: <Cpu className="w-6 h-6 text-emerald-500" />,
+          icon: <Cpu className="w-6 h-6 text-primary" />,
         },
       ],
     },
@@ -81,9 +81,9 @@ export default function Skills() {
           name: "React.js",
           level: "Advanced",
           icon: (
-            <svg viewBox="-11.5 -10.23174 23 20.46348" className="w-6 h-6 fill-none stroke-[#61DAFB] stroke-[1.2px]">
-              <circle cx="0" cy="0" r="2.05" fill="#61DAFB" />
-              <g stroke="#61DAFB" strokeWidth="1" fill="none">
+            <svg viewBox="-11.5 -10.23174 23 20.46348" className="w-6 h-6 fill-none stroke-primary text-primary stroke-[1.2px]">
+              <circle cx="0" cy="0" r="2.05" fill="currentColor" />
+              <g stroke="currentColor" strokeWidth="1" fill="none">
                 <ellipse rx="11" ry="4.2" />
                 <ellipse rx="11" ry="4.2" transform="rotate(60)" />
                 <ellipse rx="11" ry="4.2" transform="rotate(120)" />
@@ -110,12 +110,12 @@ export default function Skills() {
         {
           name: "Node & Express",
           level: "Advanced",
-          icon: <SiNodedotjs className="w-6 h-6 text-[#5FA04E]" />,
+          icon: <SiNodedotjs className="w-6 h-6 text-primary" />,
         },
         {
           name: "REST API Design",
           level: "Advanced",
-          icon: <Webhook className="w-6 h-6 text-cyan-500" />,
+          icon: <Webhook className="w-6 h-6 text-primary" />,
         },
         {
           name: "Prisma & SQL",
@@ -126,7 +126,7 @@ export default function Skills() {
           name: "Tailwind CSS",
           level: "Advanced",
           icon: (
-            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-[#06B6D4]">
+            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-primary">
               <path d="M12 6.036c-2.667 0-4.333 1.333-5 4 1-.667 2.167-.833 3.5-.5 1.141.285 1.956 1.113 2.859 2.03C14.83 13.064 16.355 14.036 19 14.036c2.667 0 4.333-1.333 5-4-1 .667-2.167.833-3.5.5-1.141-.285-1.956-1.113-2.859-2.03-1.471-1.502-2.996-2.47-5.641-2.47zm-6 6c-2.667 0-4.333 1.333-5 4 1-.667 2.167-.833 3.5-.5 1.141.285 1.956 1.113 2.859 2.03C8.83 19.064 10.355 20.036 13 20.036c2.667 0 4.333-1.333 5-4-1 .667-2.167.833-3.5.5-1.141-.285-1.956-1.113-2.859-2.03-1.471-1.502-2.996-2.47-5.641-2.47z" />
             </svg>
           ),
@@ -135,13 +135,13 @@ export default function Skills() {
     },
     {
       title: "Database Systems",
-      icon: <Database className="w-5 h-5 text-indigo-500" />,
+      icon: <Database className="w-5 h-5 text-primary" />,
       skills: [
         {
           name: "MongoDB",
           level: "Advanced",
           icon: (
-            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-[#47A248]">
+            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-primary">
               <path d="M12.015.011C11.666-.01 8.273.722 6.837 5.753c-1.393 4.88.225 9.07 1.83 11.233L12 24l3.315-7.009c1.614-2.176 3.23-6.368 1.84-11.246C15.72.716 12.35-.008 12.015.011zm.009 2.502c.408.01 2.344.927 3.033 4.896.721 4.148-1.127 7.747-2.617 9.47L12 17.842l-.417-.957c-1.498-1.734-3.351-5.343-2.624-9.502.697-3.978 2.64-4.887 3.048-4.897v.027z" />
             </svg>
           ),
@@ -149,18 +149,18 @@ export default function Skills() {
         {
           name: "MySQL",
           level: "Advanced",
-          icon: <SiMysql className="w-7 h-7 text-[#00758F]" />,
+          icon: <SiMysql className="w-7 h-7 text-primary" />,
         },
         {
           name: "Query Optimization",
           level: "Advanced",
-          icon: <Gauge className="w-6 h-6 text-yellow-500" />,
+          icon: <Gauge className="w-6 h-6 text-primary" />,
         },
       ],
     },
     {
       title: "Platforms",
-      icon: <LayoutGrid className="w-5 h-5 text-pink-500" />,
+      icon: <LayoutGrid className="w-5 h-5 text-primary" />,
       skills: [
         {
           name: "Git & GitHub",
@@ -175,7 +175,7 @@ export default function Skills() {
           name: "Postman & APIs",
           level: "Advanced",
           icon: (
-            <svg viewBox="0 0 32 32" className="w-6 h-6 fill-[#FF6C37]">
+            <svg viewBox="0 0 32 32" className="w-6 h-6 fill-primary">
               <path d="M19.168 18.064c-1.12-1.12-2.928-1.12-4.048 0L9.088 24.1c-.56.56-.864 1.312-.864 2.112s.304 1.552.864 2.112c1.12 1.12 2.928 1.12 4.048 0l6.032-6.032c1.12-1.12 1.12-2.928 0-4.048l-.000.000z" />
               <path d="M22.912 5.088c-1.12-1.12-2.928-1.12-4.048 0L6.032 17.919c-1.12 1.12-1.12 2.928 0 4.048l6.032 6.032c.56.56 1.312.864 2.112.864s1.552-.304 2.112-.864L29.12 15.168c1.12-1.12 1.12-2.928 0-4.048L22.912 5.088z" />
             </svg>
@@ -191,37 +191,37 @@ export default function Skills() {
     {
       title: "AI & LLMs",
       fullWidth: true,
-      icon: <Brain className="w-5 h-5 text-violet-500" />,
+      icon: <Brain className="w-5 h-5 text-primary" />,
       skills: [
         {
           name: "Generative AI",
           level: "Intermediate",
-          icon: <Sparkles className="w-6 h-6 text-violet-500" />,
+          icon: <Sparkles className="w-6 h-6 text-primary" />,
         },
         {
           name: "LLM Applications",
           level: "Intermediate",
-          icon: <MessageSquareText className="w-6 h-6 text-fuchsia-500" />,
+          icon: <MessageSquareText className="w-6 h-6 text-primary" />,
         },
         {
           name: "RAG Pipelines",
           level: "Intermediate",
-          icon: <FileSearch className="w-6 h-6 text-rose-500" />,
+          icon: <FileSearch className="w-6 h-6 text-primary" />,
         },
         {
           name: "AI Agents",
           level: "Intermediate",
-          icon: <Bot className="w-6 h-6 text-amber-500" />,
+          icon: <Bot className="w-6 h-6 text-primary" />,
         },
         {
           name: "MCP",
           level: "Intermediate",
-          icon: <Plug className="w-6 h-6 text-teal-500" />,
+          icon: <Plug className="w-6 h-6 text-primary" />,
         },
         {
           name: "Prompt Engineering",
           level: "Intermediate",
-          icon: <WandSparkles className="w-6 h-6 text-sky-500" />,
+          icon: <WandSparkles className="w-6 h-6 text-primary" />,
         },
       ],
     },

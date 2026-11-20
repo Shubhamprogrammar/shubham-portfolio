@@ -43,14 +43,14 @@ export default function About() {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative p-6 rounded-2xl border border-amber-500/20 bg-amber-500/5 glass flex gap-4 items-center shadow-lg animate-float overflow-hidden"
+              className="relative p-6 rounded-2xl border border-blue-500/20 bg-blue-500/5 glass flex gap-4 items-center shadow-lg animate-float overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/10 to-yellow-500/10 blur-xl opacity-30" />
-              <div className="relative p-4 rounded-full bg-gradient-to-br from-amber-400 to-yellow-600 text-white font-extrabold text-base flex items-center justify-center w-12 h-12 shadow-lg border border-yellow-300 select-none shrink-0">
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-blue-500/10 blur-xl opacity-30" />
+              <div className="relative p-4 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 text-white font-extrabold text-base flex items-center justify-center w-12 h-12 shadow-lg border border-blue-300 select-none shrink-0">
                 1st
               </div>
               <div className="relative min-w-0">
-                <h4 className="text-xs font-extrabold text-amber-500 dark:text-amber-400 tracking-wider uppercase">Consistently Ranked 1st</h4>
+                <h4 className="text-xs font-extrabold text-blue-500 dark:text-blue-400 tracking-wider uppercase">Consistently Ranked 1st</h4>
                 <p className="text-[14px] text-muted mt-1 leading-relaxed">
                   Ranked 1st consistently in computer science across all semesters at SIES (Nerul) College.
                 </p>
@@ -154,11 +154,11 @@ export default function About() {
                 <p className="text-xs text-muted font-medium mt-1">DSA HackerRank Solved</p>
               </div>
               <div>
-                <p className="text-2xl font-extrabold text-indigo-500">150+</p>
+                <p className="text-2xl font-extrabold text-blue-500">150+</p>
                 <p className="text-xs text-muted font-medium mt-1">Candidates Mentored</p>
               </div>
               <div>
-                <p className="text-2xl font-extrabold text-emerald-400">8+</p>
+                <p className="text-2xl font-extrabold text-blue-400">8+</p>
                 <p className="text-xs text-muted font-medium mt-1">Projects Shipped</p>
               </div>
             </div>
