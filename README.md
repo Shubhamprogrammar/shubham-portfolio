@@ -1,7 +1,7 @@
 # Shubham Maurya — Developer Portfolio
 
 <p align="center">
-  <a href="https://shubham-techie.vercel.app">
+  <a href="https://shubham-maurya.sas3d.in">
     <img src="https://img.shields.io/badge/Live%20Portfolio-Visit%20Website-black?style=for-the-badge" alt="Live Portfolio" />
   </a>
   <a href="https://github.com/Shubhamprogrammar">
@@ -17,7 +17,7 @@
 
 ## 🌐 Live Portfolio
 
-**[Visit My Portfolio](https://shubham-techie.vercel.app)**
+**[Visit My Portfolio](https://shubham-maurya.sas3d.in)**
 
 The portfolio showcases my:
 
@@ -282,7 +282,7 @@ The portfolio is deployed using **Vercel**.
 
 ### Production URL
 
-**https://shubham-techie.vercel.app**
+**https://shubham-maurya.sas3d.in**
 
 For production deployment, the project can be connected directly to a GitHub repository through Vercel.
 
@@ -293,7 +293,7 @@ For production deployment, the project can be connected directly to a GitHub rep
 <p>
   <a href="https://github.com/Shubhamprogrammar">GitHub</a>
   •
-  <a href="https://shubham-techie.vercel.app">Portfolio</a>
+  <a href="https://shubham-maurya.sas3d.in">Portfolio</a>
 </p>
 
 ---

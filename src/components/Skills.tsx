@@ -339,14 +339,16 @@ export default function Skills() {
                   <motion.div
                     key={skill.name}
                     whileHover={{ scale: 1.05, translateY: -2 }}
-                    className="p-3.5 rounded-2xl border border-card-border bg-background/50 hover:bg-card-bg flex flex-col items-center justify-center text-center gap-2.5 transition-all duration-200 group cursor-pointer shadow-sm hover:shadow-md hover:border-primary/30"
+                    className="p-4 rounded-2xl border border-card-border bg-background/50 hover:bg-card-bg flex flex-col items-center justify-center text-center gap-2.5 transition-all duration-200 group cursor-pointer shadow-sm hover:shadow-md hover:border-primary/30"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-card-bg border border-card-border flex items-center justify-center transition-all duration-200 group-hover:scale-110 shadow-sm">
-                      {skill.icon}
+                    <div className="w-11 h-11 rounded-xl bg-card-bg border border-card-border flex items-center justify-center transition-all duration-200 group-hover:scale-110 shadow-sm">
+                      <div className="scale-110 flex items-center justify-center">
+                        {skill.icon}
+                      </div>
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-foreground">{skill.name}</p>
-                      <p className="text-[9px] font-medium text-muted mt-0.5">{skill.level}</p>
+                      <p className="text-sm font-bold text-foreground">{skill.name}</p>
+                      <p className="text-[11px] font-medium text-muted mt-0.5">{skill.level}</p>
                     </div>
                   </motion.div>
                 ))}

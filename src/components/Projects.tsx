@@ -130,7 +130,7 @@ export default function Projects() {
         "A secure secrets management dashboard for environment variables and credentials. Designed to centralize access control, protect sensitive configuration, and provide a clean developer experience for team workflows.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Encryption", "Secrets Management", "Dashboard"],
       githubUrl: "https://github.com/Shubhamprogrammar/env-vault",
-      liveUrl: "https://online-env-vault.vercel.app/",
+      liveUrl: "https://online-env-vault.sas3d.in",
       visual: (
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
@@ -162,7 +162,7 @@ export default function Projects() {
         "An AI-driven pull request assistant that analyzes diffs, highlights code quality issues, and suggests improvements. Built to accelerate code review and make collaborator feedback more precise with contextual suggestions.",
       tags: ["React.js", "AI", "NLP", "Code Review", "GitHub API", "Automation"],
       githubUrl: "https://github.com/Shubhamprogrammar/pr-reviewer",
-      liveUrl: "https://pr-reviewer-virid.vercel.app/",
+      liveUrl: "https://pr-reviewer-virid.sas3d.in/",
       visual: (
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-purple-950 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
@@ -233,7 +233,7 @@ export default function Projects() {
         "A collaborative MERN stack web platform designed to allow users to express thoughts and ideas freely. Leverages JWT authorization filters and a responsive UI layout to drive candidate engagement and interactive discussions.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Bootstrap CSS", "JWT Auth"],
       githubUrl: "https://github.com/Shubhamprogrammar/open-your-heart-frontend",
-      liveUrl: "https://openyourhearts.vercel.app/",
+      liveUrl: "https://openyourhearts.sas3d.in/",
       visual: (
         <div className="absolute inset-0 bg-gradient-to-br from-rose-950 via-slate-900 to-rose-900 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
