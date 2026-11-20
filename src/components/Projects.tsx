@@ -42,13 +42,13 @@ function MLPlayground() {
   };
 
   return (
-    <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-slate-950 to-blue-900 flex flex-col justify-between p-5 text-white select-none text-left">
+    <div className="absolute inset-0 bg-gradient-to-br from-cyan-950 via-slate-950 to-cyan-900 flex flex-col justify-between p-5 text-white select-none text-left">
       <div className="flex justify-between items-center border-b border-white/10 pb-2">
         <div className="flex items-center gap-1.5">
-          <Activity className="w-4 h-4 text-blue-400 animate-pulse" />
+          <Activity className="w-4 h-4 text-cyan-400 animate-pulse" />
           <span className="text-[10px] font-extrabold tracking-wider uppercase">Live Model inference</span>
         </div>
-        <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 text-[8px] font-bold border border-blue-500/20">
+        <span className="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[8px] font-bold border border-cyan-500/20">
           Classifier
         </span>
       </div>
@@ -59,7 +59,7 @@ function MLPlayground() {
         <div className="space-y-1">
           <div className="flex justify-between text-[9px] text-white/60 font-semibold">
             <span>Cell Radius</span>
-            <span className="font-bold text-blue-300">{radius.toFixed(1)} µm</span>
+            <span className="font-bold text-cyan-300">{radius.toFixed(1)} µm</span>
           </div>
           <input
             type="range"
@@ -69,7 +69,7 @@ function MLPlayground() {
             value={radius}
             onChange={(e) => setRadius(parseFloat(e.target.value))}
             onClick={(e) => e.stopPropagation()}
-            className="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-blue-400"
+            className="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-cyan-400"
           />
         </div>
 
@@ -77,7 +77,7 @@ function MLPlayground() {
         <div className="space-y-1">
           <div className="flex justify-between text-[9px] text-white/60 font-semibold">
             <span>Concavity</span>
-            <span className="font-bold text-blue-300">{concavity.toFixed(2)}</span>
+            <span className="font-bold text-cyan-300">{concavity.toFixed(2)}</span>
           </div>
           <input
             type="range"
@@ -87,7 +87,7 @@ function MLPlayground() {
             value={concavity}
             onChange={(e) => setConcavity(parseFloat(e.target.value))}
             onClick={(e) => e.stopPropagation()}
-            className="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-blue-400"
+            className="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-cyan-400"
           />
         </div>
       </div>
@@ -97,14 +97,14 @@ function MLPlayground() {
         <button
           onClick={handleClassify}
           disabled={isClassifying}
-          className="px-3 py-1.5 rounded-lg bg-blue-400 hover:bg-blue-500 disabled:opacity-50 text-[9px] font-bold text-slate-950 transition cursor-pointer flex items-center gap-1 select-none"
+          className="px-3 py-1.5 rounded-lg bg-cyan-400 hover:bg-cyan-500 disabled:opacity-50 text-[9px] font-bold text-slate-950 transition cursor-pointer flex items-center gap-1 select-none"
         >
           {isClassifying ? "Running..." : "Predict"}
         </button>
 
         <div className="flex-1 text-right min-h-6 flex items-center justify-end">
           {isClassifying ? (
-            <span className="text-[9px] text-blue-300 animate-pulse">Running inference...</span>
+            <span className="text-[9px] text-cyan-300 animate-pulse">Running inference...</span>
           ) : result === "Malignant" ? (
             <span className="text-[10px] font-extrabold text-red-400 drop-shadow-[0_0_8px_rgba(248,113,113,0.5)] animate-pulse">
               Malignant (Tumor)
@@ -132,13 +132,13 @@ export default function Projects() {
       githubUrl: "https://github.com/Shubhamprogrammar/env-vault",
       liveUrl: "https://online-env-vault.sas3d.in",
       visual: (
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 flex flex-col justify-between p-6 text-white select-none">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <Lock className="w-5 h-5 text-blue-400 animate-pulse" />
+              <Lock className="w-5 h-5 text-cyan-400 animate-pulse" />
               <span className="text-xs font-bold tracking-wider">ENV VAULT</span>
             </div>
-            <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 text-[9px] border border-blue-500/20 font-semibold">
+            <span className="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[9px] border border-cyan-500/20 font-semibold">
               Secure
             </span>
           </div>
@@ -148,7 +148,7 @@ export default function Projects() {
               <div className="w-full h-3 bg-white/20 rounded" />
               <div className="w-5/6 h-3 bg-white/15 rounded" />
               <div className="flex gap-2">
-                <div className="flex-1 h-9 rounded-xl bg-blue-500/10 border border-blue-400/10" />
+                <div className="flex-1 h-9 rounded-xl bg-cyan-500/10 border border-cyan-400/10" />
                 <div className="flex-1 h-9 rounded-xl bg-white/10" />
               </div>
             </div>
@@ -164,13 +164,13 @@ export default function Projects() {
       githubUrl: "https://github.com/Shubhamprogrammar/pr-reviewer",
       liveUrl: "https://pr-reviewer-virid.vercel.app/",
       visual: (
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 flex flex-col justify-between p-6 text-white select-none">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <Code2 className="w-5 h-5 text-blue-400 animate-pulse" />
+              <Code2 className="w-5 h-5 text-cyan-400 animate-pulse" />
               <span className="text-xs font-bold tracking-wider">AI PR REVIEWER</span>
             </div>
-            <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 text-[9px] border border-blue-500/20 font-semibold">
+            <span className="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[9px] border border-cyan-500/20 font-semibold">
               Smart Review
             </span>
           </div>
@@ -179,11 +179,11 @@ export default function Projects() {
             <div className="h-24 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 space-y-2">
               <div className="flex justify-between items-center">
                 <div className="w-16 h-3 bg-white/20 rounded" />
-                <span className="text-[8px] text-blue-300 font-bold">AI Insight</span>
+                <span className="text-[8px] text-cyan-300 font-bold">AI Insight</span>
               </div>
               <div className="w-full h-2 bg-white/15 rounded" />
               <div className="w-3/4 h-2 bg-white/15 rounded" />
-              <div className="h-7 rounded-xl bg-blue-500/10 flex items-center justify-center text-[9px] font-semibold text-blue-200">
+              <div className="h-7 rounded-xl bg-cyan-500/10 flex items-center justify-center text-[9px] font-semibold text-cyan-200">
                 Review suggestions
               </div>
             </div>
@@ -199,13 +199,13 @@ export default function Projects() {
       githubUrl: "https://github.com/Shubhamprogrammar/sarvavyapi-frontend",
       liveUrl: "https://sarvavyapi.vercel.app/",
       visual: (
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 flex flex-col justify-between p-6 text-white select-none">
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-950 via-slate-900 to-cyan-900 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
               <Home className="w-5 h-5 text-accent animate-pulse" />
               <span className="text-xs font-bold tracking-wider">SARVAVYAPI REALTY</span>
             </div>
-            <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-400 text-[9px] border border-blue-500/20 font-semibold">
+            <span className="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-400 text-[9px] border border-cyan-500/20 font-semibold">
               Live App
             </span>
           </div>
@@ -235,13 +235,13 @@ export default function Projects() {
       githubUrl: "https://github.com/Shubhamprogrammar/open-your-heart-frontend",
       liveUrl: "https://openyourhearts.sas3d.in/",
       visual: (
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900 flex flex-col justify-between p-6 text-white select-none">
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-950 via-slate-900 to-cyan-900 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <Heart className="w-5 h-5 text-blue-400 animate-pulse" />
+              <Heart className="w-5 h-5 text-cyan-400 animate-pulse" />
               <span className="text-xs font-bold tracking-wider">OPEN HEARTS</span>
             </div>
-            <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 text-[9px] border border-blue-500/20 font-semibold">
+            <span className="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[9px] border border-cyan-500/20 font-semibold">
               Community
             </span>
           </div>
@@ -250,11 +250,11 @@ export default function Projects() {
             <div className="h-24 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-3.5 flex flex-col justify-between">
               <div className="flex justify-between items-start">
                 <div className="w-24 h-3.5 bg-white/20 rounded-md" />
-                <span className="text-[8px] text-blue-300 font-bold">♥ 14 Likes</span>
+                <span className="text-[8px] text-cyan-300 font-bold">♥ 14 Likes</span>
               </div>
               <div className="w-full h-2 bg-white/15 rounded" />
               <div className="w-2/3 h-2 bg-white/15 rounded" />
-              <div className="h-4 bg-blue-500/20 rounded flex items-center justify-center text-[8px] font-bold text-blue-300">
+              <div className="h-4 bg-cyan-500/20 rounded flex items-center justify-center text-[8px] font-bold text-cyan-300">
                 Share Thoughts
               </div>
             </div>
@@ -271,13 +271,13 @@ export default function Projects() {
       githubUrl: "https://github.com/Shubhamprogrammar/uchat-webapp",
       liveUrl: "https://uchat-webapp.vercel.app/",
       visual: (
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 flex flex-col justify-between p-6 text-white select-none">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <MessageSquare className="w-5 h-5 text-blue-400 animate-pulse" />
+              <MessageSquare className="w-5 h-5 text-cyan-400 animate-pulse" />
               <span className="text-xs font-bold tracking-wider">UCHAT WEB</span>
             </div>
-            <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 text-[9px] border border-blue-500/20 font-semibold">
+            <span className="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 text-[9px] border border-cyan-500/20 font-semibold">
               Realtime
             </span>
           </div>
@@ -285,15 +285,15 @@ export default function Projects() {
           <div className="space-y-3 mt-4">
             <div className="h-24 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 space-y-2">
               <div className="flex gap-2">
-                <div className="w-10 h-10 rounded-2xl bg-blue-500/20" />
+                <div className="w-10 h-10 rounded-2xl bg-cyan-500/20" />
                 <div className="flex-1 space-y-2">
                   <div className="w-full h-3 bg-white/20 rounded" />
                   <div className="w-3/4 h-3 bg-white/15 rounded" />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-2">
-                <div className="h-7 rounded-xl bg-blue-500/10" />
-                <div className="h-7 rounded-xl bg-blue-500/10" />
+                <div className="h-7 rounded-xl bg-cyan-500/10" />
+                <div className="h-7 rounded-xl bg-cyan-500/10" />
               </div>
             </div>
           </div>
@@ -308,13 +308,13 @@ export default function Projects() {
       githubUrl: "https://github.com/Shubhamprogrammar/Launchflow-automate",
       liveUrl: "#",
       visual: (
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 flex flex-col justify-between p-6 text-white select-none">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 flex flex-col justify-between p-6 text-white select-none">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <Activity className="w-5 h-5 text-blue-300 animate-pulse" />
+              <Activity className="w-5 h-5 text-cyan-300 animate-pulse" />
               <span className="text-xs font-bold tracking-wider">LAUNCHFLOW</span>
             </div>
-            <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-200 text-[9px] border border-blue-500/20 font-semibold">
+            <span className="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-200 text-[9px] border border-cyan-500/20 font-semibold">
               Workflow
             </span>
           </div>
@@ -323,26 +323,26 @@ export default function Projects() {
             <div className="h-24 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm p-4">
               <div className="flex items-center justify-between gap-3 mb-3">
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.24em] text-blue-200/80">Active pipeline</p>
+                  <p className="text-[10px] uppercase tracking-[0.24em] text-cyan-200/80">Active pipeline</p>
                   <p className="mt-1 text-sm font-semibold text-white">Candidate onboarding</p>
                 </div>
-                <span className="text-[10px] text-blue-300 font-semibold">83%</span>
+                <span className="text-[10px] text-cyan-300 font-semibold">83%</span>
               </div>
               <div className="h-2 rounded-full bg-white/10 overflow-hidden">
-                <div className="h-full w-5/6 rounded-full bg-blue-400" />
+                <div className="h-full w-5/6 rounded-full bg-cyan-400" />
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-3">
               <div className="rounded-3xl border border-white/10 bg-white/5 p-3">
-                <div className="h-2.5 w-2/3 rounded-full bg-blue-400 mb-3" />
+                <div className="h-2.5 w-2/3 rounded-full bg-cyan-400 mb-3" />
                 <div className="space-y-2">
                   <div className="h-2 rounded-full bg-white/10" />
                   <div className="h-2 rounded-full bg-white/10 w-5/6" />
                 </div>
               </div>
               <div className="rounded-3xl border border-white/10 bg-white/5 p-3">
-                <div className="h-2.5 w-3/4 rounded-full bg-blue-300 mb-3" />
+                <div className="h-2.5 w-3/4 rounded-full bg-cyan-300 mb-3" />
                 <div className="space-y-2">
                   <div className="h-2 rounded-full bg-white/10" />
                   <div className="h-2 rounded-full bg-white/10 w-4/6" />
@@ -351,7 +351,7 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.24em] text-blue-200 text-opacity-80">
+          <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.24em] text-cyan-200 text-opacity-80">
             <span>Secure access</span>
             <span>Automated tasks</span>
           </div>

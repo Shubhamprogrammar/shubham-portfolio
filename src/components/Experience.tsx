@@ -216,7 +216,7 @@ export default function Experience() {
             {/* Certifications Sub-Section */}
             <div className="space-y-8">
               <div className="flex items-center gap-3 border-b border-card-border pb-4">
-                <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-500 shadow-sm">
+                <div className="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-500 shadow-sm">
                   <Award className="w-5 h-5" />
                 </div>
                 <h4 className="text-xl font-bold text-foreground">Certifications</h4>
@@ -233,11 +233,11 @@ export default function Experience() {
                     className="relative space-y-2"
                   >
                     {/* Bullet Node */}
-                    <span className="absolute -left-[31px] top-1 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500 ring-4 ring-background" />
+                    <span className="absolute -left-[31px] top-1 flex h-4 w-4 items-center justify-center rounded-full bg-cyan-500 ring-4 ring-background" />
 
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <h5 className="text-lg font-bold text-foreground">{cert.title}</h5>
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-500 border border-blue-500/20">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-500 border border-cyan-500/20">
                         <Calendar className="w-3.5 h-3.5" />
                         {cert.date}
                       </span>

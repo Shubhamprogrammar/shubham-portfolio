@@ -86,7 +86,7 @@ export default function Contact() {
         particleCount: 120,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ["#1d4ed8", "#3b82f6", "#93c5fd"],
+        colors: ["#0891b2", "#22d3ee", "#67e8f9"],
       });
 
       setForm({ name: "", email: "", subject: "", message: "" });

@@ -106,7 +106,7 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight"
               >
-                <span className="bg-gradient-to-r from-primary via-blue-400 to-accent bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary via-cyan-400 to-accent bg-clip-text text-transparent">
                   Shubham Maurya
                 </span>
               </motion.h1>
